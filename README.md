@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Link to how it works -> https://www.youtube.com/watch?v=dlDOVm9MX20
 
-## Getting Started
+## Inspiration
+I remeber going to arcades when I was a child. The fun of putting in a coin playing the games and having the thrill of winning the tickets to keep playing stuck with me. After pondering around for a long a time how to recreate the same feeling, I found blockchain tech and created this for anyone who misses the same feeling!
 
-First, run the development server:
+## What it does
+BlockAde or Blockchian Arcade, is a DApp that has a collection of games (2 as of now). It has the play to earn model which is coded right to the smart contract governing the whole app. All the features of the app are as follows: 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Rewards: You have the shot at earning two different rewards. One is the daily Logins. You log into the game of your choice and earn some money! The amount of money you earn is multiplied for each day you log in so to earn the most amount of money, don't forget to log in! The second type of reward is the one you get after winning. That too again can be increased by winning again and again. Remember the moment you lose a game, your streak is gone and your extra rewards are reset! This same functionality is present on each game offered by BlockAde!
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. Games: Right now BlockAde offers two games, namely the world-famous game Worlde and the second one being the classic casual game we all love 2048. I believe everyone knows how worlde works and as for 2048 instructions are available on its page. Just to keep the theme of winning at the arcade tangible I have not allowed 2048 to run in the endless mode so the moment your score reaches 2048 you win!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Tipping: If you like the platform you can choose to donate some money to Blockade which will help in sustaining the platform for a long. There are no signup fees however for each transaction that has to happen on the blockchain, the gas fees is expected to be paid by the player. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How I built it
+I built the frontend using Next.Js with TypeScript and for the backend I have used Python's Flask and Solidity for writing the smart contact. I also used Truffle for deploying and testing the contracts and Ganache for setting up a local blockchian
 
-## Learn More
+## Challenges I ran into
+This was my first time using Next js so it took me some time to translate my react knowledge here. I was unable to use libraries like the Styled COmponents, react-bootstrap without significantly changing the code I had already written at that point which made the whole process of making the UI look good difficult. Also, Next has some idiosyncracies which I had to get over to finish the project. 
+React and by extension, Next is not a good library to create games. I had made a couple of games using Phaser, however, getting them together with the Next project became a nightmare which I had to abandon and make two different games. That is the only reason why BlockAcde currently only has two games. Getting blockchain to work with TypeScript was another nightmare. 
 
-To learn more about Next.js, take a look at the following resources:
+## Accomplishments that I am proud of
+The fact that everything works!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What I learned
+I learned a lot about Next, Solidity, React, Phaser!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## What's next for BlockAde
+Getting more games into the platform and making everything onto a testnet!
